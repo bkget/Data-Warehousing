@@ -1,7 +1,8 @@
 {{ config(materialized='table') }}
-SELECT  track_id, 
+   SELECT  
+        track_id, 
         type, 
-        traveled_d ,
+        traveled_d,
         avg_speed, 
         lat, 
         lon,
@@ -10,4 +11,5 @@ SELECT  track_id,
         lat_acc, 
         time
         
-FROM  traffic 
+   FROM  
+        traffic 
