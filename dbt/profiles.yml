@@ -3,7 +3,7 @@ postgres_new:
   outputs:
     dev:
       type: postgres
-      host: localhost
+      host: postgres
       user: airflow
       pass: airflow
       port: 5432
