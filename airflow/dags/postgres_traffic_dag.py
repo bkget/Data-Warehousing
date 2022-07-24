@@ -39,7 +39,7 @@ def insert_data():
 
 # Dag creation
 with DAG(
-    dag_id='database_migrator_dag',
+    dag_id='data_to_Postgres_loader_dag',
     default_args=default_args,
     description='Upload data from CSV to MySQL',
     schedule_interval='@once',
@@ -65,7 +65,8 @@ with DAG(
             speed double precision DEFAULT NULL,    
             lon_acc double precision DEFAULT NULL, 
             lat_acc double precision DEFAULT NULL, 
-            time double precision DEFAULT NULL
+            time double precision DEFAULT NULL,
+            primary key (track_id)
         );
     '''
     )
