@@ -12,7 +12,7 @@ with traffic as (
         lat_acc
         
     FROM 
-        traffic
+        {{ ref('traffic_model') }}
 
     WHERE
         type = 'Car'
@@ -20,4 +20,4 @@ with traffic as (
     ORDER BY
         time
 )
-SELECT * FROM traffic
+SELECT * FROM {{ ref('traffic_model') }}

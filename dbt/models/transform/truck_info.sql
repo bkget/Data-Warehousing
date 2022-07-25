@@ -6,7 +6,7 @@ SELECT
     COUNT(type) as total_count
 
 FROM 
-  traffic
+  {{ ref('traffic_model') }}
   
 GROUP BY
   type
