@@ -15,7 +15,7 @@ with traffic as (
         traffic
 
     WHERE
-        type = ' Taxi'
+        type = 'Taxi'
 
     ORDER BY
         time

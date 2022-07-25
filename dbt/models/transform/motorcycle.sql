@@ -15,7 +15,7 @@ with traffic as (
         traffic
 
     WHERE
-        type = ' Motorcycle'
+        type = 'Motorcycle'
 
     ORDER BY
         time

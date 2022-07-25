@@ -15,7 +15,7 @@ with traffic as (
         traffic
 
     WHERE
-        type = ' Heavy Vehicle'
+        type = 'Heavy Vehicle'
 
     ORDER BY
         time
