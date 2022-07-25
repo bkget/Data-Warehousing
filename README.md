@@ -78,7 +78,7 @@ Make sure you have docker installed on local machine.
     ```
 2. Navigate to the folder
     ```sh
-    cd Data-Warehousing
+    cd Data-Warehousing/airflow
     ```
 3. Build an airflow image
     ```sh
