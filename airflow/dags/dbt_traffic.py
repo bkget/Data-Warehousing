@@ -43,5 +43,10 @@ with DAG(
         task_id="dbt_test",
         bash_command=f"dbt test --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}",
     )
+    # Error
+    dbt_doc_gen = BashOperator(
+        task_id="dbt_doc_gen", 
+        bash_command="dbt docs generate --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}"
+    )
 
-    dbt_seed >> dbt_run >> dbt_test
+    dbt_seed >> dbt_run >> dbt_test >> dbt_doc_gen
