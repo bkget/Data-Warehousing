@@ -16,10 +16,9 @@
 
   <p align="center">
     A dockerized ELT pipeline.
-    <br />
+    <br /><br />
     <a href="https://traffic-doc.netlify.app/"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <br /> 
     <a href="https://github.com/bkget/Data-Warehousing/issues">Report Bug</a>
     ·
     <a href="https://github.com/bkget/Data-Warehousing/issues">Request Feature</a>
@@ -124,12 +123,12 @@ Biruk Getaneh - bkgetmom@gmail.com
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/bkget/Data-Warehousing.svg?style=for-the-badge
 [contributors-url]: https://github.com/bkget/Data-Warehousing/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/bkget/Data-Warehousing.svg?style=for-the-badge
-[forks-url]: https://img.shields.io/github/forks/bkget/Data-Warehousing?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/bkget/Data-Warehousing?style=for-the-badge
+[forks-url]: https://github.com/bkget/Data-Warehousing?style=for-the-badge
 [stars-shield]: https://img.shields.io/github/stars/bkget/Data-Warehousing?style=for-the-badge
 [stars-url]: https://github.com/bkget/Data-Warehousing/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://img.shields.io/github/issues/bkget/Data-Warehousing?style=for-the-badge
+[issues-url]: https://github.com/bkget/Data-Warehousing/issues?style=for-the-badge
 [license-shield]: https://img.shields.io/github/license/bkget/Data-Warehousing?style=for-the-badge
 [license-url]: https://github.com/bkget/Data-Warehousing/blob/main/LICENSE
 [Postgresql.com]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
