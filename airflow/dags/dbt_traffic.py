@@ -27,8 +27,7 @@ with DAG(
     catchup=False,
     default_args=default_args, 
 ) as dag:
-    # This task loads the CSV files from dbt/data into the local postgres database for the purpose of this demo.
-    # In practice, we'd usually expect the data to have already been loaded to the database.
+   
     dbt_seed = BashOperator(
         task_id="dbt_seed", 
         bash_command=f"dbt seed --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}", 
@@ -43,10 +42,11 @@ with DAG(
         task_id="dbt_test",
         bash_command=f"dbt test --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}",
     )
-    # Error
-    dbt_doc_gen = BashOperator(
+
+    dbt_doc_generate = BashOperator(
         task_id="dbt_doc_gen", 
-        bash_command="dbt docs generate --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}"
+        bash_command="dbt docs generate --profiles-dir /opt/airflow/dbt --project-dir "
+                      "/opt/airflow/dbt"
     )
 
-    dbt_seed >> dbt_run >> dbt_test >> dbt_doc_gen
+    dbt_seed >> dbt_run >> dbt_test >> dbt_doc_generate
